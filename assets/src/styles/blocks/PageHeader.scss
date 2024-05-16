@@ -75,7 +75,7 @@ $text-column-padding-in: 24px;
   .wp-block-heading.has-background {
     display: inline;
     padding: 0;
-    font-size: inherit;
+    font-size: $font-size-xxl;
     font-weight: inherit;
     line-height: 150%;
     box-decoration-break: clone;
@@ -122,7 +122,7 @@ $text-column-padding-in: 24px;
       margin: 0;
       padding: 0;
 
-      > *:nth-child(n+2) {
+      >*:nth-child(n+2) {
         max-width: calc(#{$text-column-width-l} - #{$text-column-padding-in});
       }
     }
@@ -139,7 +139,7 @@ $text-column-padding-in: 24px;
 
   @include x-large-and-up {
     .wp-block-media-text__content {
-      > *:nth-child(n+2) {
+      >*:nth-child(n+2) {
         max-width: calc(#{$text-column-width-xl} - #{$text-column-padding-in});
       }
     }
@@ -151,7 +151,7 @@ $text-column-padding-in: 24px;
 
   @include xx-large-and-up {
     .wp-block-media-text__content {
-      > *:nth-child(n+2) {
+      >*:nth-child(n+2) {
         max-width: calc(#{$text-column-width-xxl} - #{$text-column-padding-in});
       }
     }
@@ -173,7 +173,7 @@ $text-column-padding-in: 24px;
       grid-row: 1;
       padding-right: $sp-3;
 
-      & > * {
+      &>* {
         justify-content: left;
         text-align: left;
       }
@@ -218,7 +218,7 @@ $text-column-padding-in: 24px;
       grid-row: 1;
       padding-left: $sp-3;
 
-      & > * {
+      &>* {
         justify-content: right;
         text-align: right;
       }
